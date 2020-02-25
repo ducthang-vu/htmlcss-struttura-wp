@@ -60,7 +60,7 @@ header {
   padding: 18px 10px;
 }
 
-.link:hover {
+.link-header:hover {
   background-color: rgba(0, 0, 0, 0.5)
 }
 
@@ -90,10 +90,15 @@ main::after{
 .column-link {
   display: block;
   text-decoration: none;
-  font-weight: bolder;
   color: rgb(0, 153, 0);
+  font-size: 20px;
   padding-top: 10px;
 }
+
+.column-link:hover {
+  text-decoration: underline;
+}
+
 
 .column.sx {
   width: calc(100%/5);
@@ -110,6 +115,10 @@ main::after{
   margin-left: 5%;
 }
 
+.column.centre .column-title {
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+}
+
 .column.dx {
   background-color: rgba(0, 0, 0, 0);
   padding: 0;
@@ -118,38 +127,45 @@ main::after{
 
 .windget {
   margin-bottom: 15px;
-  padding: 5px;
+  padding: 15px;
   background-color: white;
   border: 0;
   border-radius: 10px;
 }
 
+.windget h2{
+  padding-bottom: 30px;
+}
+
 
 /* MAIN FOOTER */
 
-.main-footer{
-  height: 50px;
-  background: yellow;
+footer{
+  background: snow;
   border: 0;
   border-radius: 5px;
   margin-bottom: 10px;
-  text-align: center
+  text-align: center;
+  padding: 4px 10px;
 }
 
-.footer-text {
-  height: 40px;
-  background: #aaa;
+.footer-content {
+  color: grey;
+  padding-bottom: 1px;
+  border-bottom: 1px solid grey;
+  font-style: italic;
+  font-size: 12px;
 }
 
-.socials {
-  padding-right: 0;
-  padding-left: 0;
+.footer-link-cont::after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
-.socials li {
-  list-style: none;
+.footer-link-cont li {
   float: left;
   width: calc(100%/3);
-  line-height: 80px;
-  background: #ccc;
+  list-style: none;
+  padding: 50px;
 }
