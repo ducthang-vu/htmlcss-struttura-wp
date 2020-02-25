@@ -187,5 +187,5 @@ footer {
 }
 
 .footer-link-cont a:hover {
-  border: 1px solid darkgrey;
+  border-bottom: 1px solid darkgrey;
 }
