@@ -67,7 +67,7 @@ header {
 /* MAIN PART */
 
 main {
-  font-family: 'Roboto',
+  font-family: 'Roboto';
 }
 
 main::after{
@@ -103,14 +103,14 @@ main::after{
   width: calc(100%/5);
 }
 
-.fa-rss-square {
-  display: inline-block;
-  color: orange;
+.fa {
+  /* display: inline-block; */
 }
 
 .column.sx .column-title {
   display: inline-block;
 }
+
 
 .column-title{
   margin-bottom: 25px;
@@ -121,6 +121,7 @@ main::after{
   width: calc(100%/2);
   margin-right: 5%;
   margin-left: 5%;
+  padding: 20px;
 }
 
 .column.centre .column-title {
@@ -177,4 +178,8 @@ footer {
   width: calc(100%/3);
   list-style: none;
   padding: 30px;
+}
+
+.footer-link-cont a:hover {
+  border: 1px solid darkgrey;
 }
