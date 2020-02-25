@@ -184,6 +184,7 @@ footer {
   width: calc(100%/3);
   list-style: none;
   padding: 30px;
+  font-size: 30px;
 }
 
 .footer-link-cont a:hover {
